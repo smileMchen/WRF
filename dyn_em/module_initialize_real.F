@@ -933,7 +933,7 @@ integer::oops1,oops2
          !  If we have the low-resolution surface elevation, stick that in the
          !  "input" locations of the 3d height.  We still have the "hi-res" topo
          !  stuck in the grid%ht array.  The grid%landmask if test is required as some sources
-         !  have ZERO elevation over water (thank you very much).
+         !  have ZERO elevation over water 
 
          IF ( flag_soilhgt .EQ. 1) THEN
             DO j = jts, MIN(jte,jde-1)
@@ -5250,7 +5250,7 @@ endif
 
 
       !  Have we found the correct location?  If so, we can just pop back up with
-      !  the pointer to the right location (i.e. the parent), thank you very much.
+      !  the pointer to the right location (i.e. the parent)
 
       IF ( id_wanted .EQ. grid_ptr_in%grid_id ) THEN
 
